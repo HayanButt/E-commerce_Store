@@ -232,5 +232,106 @@ header {
 
 #features {
     background-color: rgba(115, 66,214, 0.1);
-    height: 1000px;
+    padding-top: 4vw;
+}
+
+.books {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.book {
+    width: 25%;
+    padding: 24px;
+}
+
+.features__title {
+    padding: 88px 0;
+}
+
+.book__img {
+    max-height: 380px;
+    transition: all 300ms ease;
+    cursor: no-drop;
+}
+
+.book__img--wrapper {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.book__title {
+    font-size: 20px;
+    margin-bottom: 8px;
+    cursor: no-drop;
+}
+
+.book__title:hover {
+    text-decoration: underline;
+}
+
+
+.book__img--wrapper:hover .book__img {
+    transform: scale(1.03)
+}
+
+.book__rating {
+    margin-bottom: 8px;
+    color: #fabf2a;
+}
+
+.book__price--normal {
+    padding-right: 6px;
+    color: #bfbfbf;
+    text-decoration:line-through;
+}
+
+/*MORE*/
+
+#more {
+    background-color: rgba(115, 66,214, 0.1);
+}
+
+.more__wrapper {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #242424;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img__wrapper {
+    width: 160px;
+    filter: grayscale(1) invert(1);
+}
+
+.footer__links {
+    margin: 16px 0;
+}
+
+
+
+.link__home, .link__about, .link__books, .link__contact {
+    color:aliceblue;
+    padding-right: 8px;
 }
