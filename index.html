@@ -7,23 +7,44 @@
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e45040652d.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <section id="landing">
         <nav>
             <div class="nav__container">
                 <img class="logo" src="./assets/Library.svg" alt="">
-                <ul class="nav_links">
+                <ul class="nav__links">
                     <li>
                         <a class="nav__link" href="">Home</a> 
                     </li>
                     <li>
-                        <a class="nav__link" href="">Contact </a>
+                        <a class="nav__link no-cursor" href="">Contact </a>
                     </li>
                     <li>
-                        <a class="nav__link nav__link--primary" href="">Books</a>
+                        <a class="nav__link nav__link--primary" href="#features">Books</a>
                     </li>
                 </ul>
+                
+                <button class="button__menu" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="button__menu button__menu--close" onclick="closeMenu()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#landing" class="menu__link" onclick="closeMenu()">Home</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="" class="no-cursor menu__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             </nav>
 
@@ -32,7 +53,9 @@
                 <div class="desc__description">
                     <h1 class="desc__title">The UK's most awarded online library platform</h1>
                     <h2 class="desc__subtitle">Find your dream book with <span class="text__purple">Library</span></h2>
-                    <button class="desc__button">Browse books</button>
+                    <a href="#features">
+                        <button class="desc__button">Browse books</button>
+                    </a>
                 </div>
                 <figure class="desc__img--wrapper">
                     <img class="desc__img" src="/assets/Undraw_Books.svg" alt="">
@@ -287,7 +310,9 @@
                 <div class="row">
                     <div class="more__wrapper">
                         <h2 class="more__title">Explore more <span class="text__purple">Books</span></h2>
-                        <button class="desc__button">Browse Books</button>
+                        <a href="#features">
+                            <button class="desc__button">Browse Books</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -298,18 +323,18 @@
             <div class="container">
                 <div class="row">
                     <div class="footer__wrapper">
-                        <figure class="img__wrapper">
-                            <img src="./assets/Library.svg" alt="" class="footer__img">
-                        </figure>
+                        <a href="#landing">
+                            <figure class="img__wrapper">
+                                <img src="./assets/Library.svg" alt="" class="footer__img">
+                            </figure>
+                        </a>
                         <div class="footer__link--wrapper">
-                            <ul class="footer__links">
-                                <li class="link__home">Home</li>
-                                <li class="link__about">About</li>
-                                <li class="link__books">Books</li>
-                                <li class="link__contact">Contact</li>
-                            </ul>
+                            <a href="" class="footer__link">Home</a>
+                            <a href="" class="footer__link no-cursor">About</a>
+                            <a href="" class="footer__link">Books</a>
+                            <a href="" class="footer__link no-cursor">Contact</a>
                         </div>
-                        <div class="copyright">Copyright <i class="fa-light fa-copyright"></i> Library 2022</div>
+                        <div class="copyright">Copyright &copy Library 2022</div>
                     </div>
                 </div>
             </div>
